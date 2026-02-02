@@ -18,6 +18,20 @@ One of the key advantages of React is its **component-based architecture**, wher
 
 When building applications with React, **respecting failures** means planning for error boundaries, graceful degradation, and fallback mechanisms. You can’t always control external dependencies or network failures, but you can control how your application reacts when these failures occur.
 
+#### Visualizing the Component Ecosystem
+http://googleusercontent.com/image_collection/image_retrieval/8341750790565300868_2
+> **Image Explanation:** This diagram illustrates the hierarchical "tree" structure of React. By breaking a UI into independent components, developers can swap in community-tested libraries (like React Router for navigation) instead of building custom logic for every part of the tree.
+
+### Respect for Component Failures and State Management
+One of the key advantages of React is its component-based architecture, where each component is responsible for managing its own state and rendering. However, as complexity grows, managing state can become a challenge. It’s essential to plan for the reality that components can and will fail.
+
+**Respecting failures** means planning for error boundaries, graceful degradation, and fallback mechanisms. While you can’t always control external dependencies or network failures, you can control how your application reacts.
+
+#### Handling Errors in React Components
+React provides a built-in mechanism for catching errors through **Error Boundaries**. These are components that catch JavaScript errors anywhere in their child component tree and display a fallback UI instead of crashing the entire application.
+
+http://googleusercontent.com/image_collection/image_retrieval/10009733352042022059_0
+
 ### Handling Errors in React Components
 
 React provides a built-in mechanism for catching errors in your components through **Error Boundaries**. These are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of crashing the component tree. Here is an example of how you can use an error boundary:
