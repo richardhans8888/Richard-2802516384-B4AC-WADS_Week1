@@ -12,14 +12,8 @@ For example, if you need to implement routing in your application, there is no n
 
 However, while using pre-built solutions can save you time, it’s also essential to understand when a particular library or tool isn’t the right fit for your project. It’s important to avoid **overengineering** your app with unnecessary libraries that may add complexity and increase your app’s bundle size without providing significant benefits. Always evaluate each external tool for its value and whether it adds real benefit to your application.
 
-## Respect for Component Failures and State Management
-
-One of the key advantages of React is its **component-based architecture**, where each component is responsible for managing its own state and rendering. However, as the complexity of an app grows, managing state across many components can become a challenge. It’s easy to forget that, like any other software, components can and will fail.
-
-When building applications with React, **respecting failures** means planning for error boundaries, graceful degradation, and fallback mechanisms. You can’t always control external dependencies or network failures, but you can control how your application reacts when these failures occur.
-
-#### Visualizing the Component Ecosystem
-http://googleusercontent.com/image_collection/image_retrieval/8341750790565300868_2
+##### Visualizing the Component Ecosystem
+https://www.simform.com/wp-content/uploads/2020/05/Reactjs-architecture-application-diagram.webp
 > **Image Explanation:** This diagram illustrates the hierarchical "tree" structure of React. By breaking a UI into independent components, developers can swap in community-tested libraries (like React Router for navigation) instead of building custom logic for every part of the tree.
 
 ### Respect for Component Failures and State Management
@@ -30,9 +24,8 @@ One of the key advantages of React is its component-based architecture, where ea
 #### Handling Errors in React Components
 React provides a built-in mechanism for catching errors through **Error Boundaries**. These are components that catch JavaScript errors anywhere in their child component tree and display a fallback UI instead of crashing the entire application.
 
-http://googleusercontent.com/image_collection/image_retrieval/10009733352042022059_0
-
-### Handling Errors in React Components
+https://refine-web.imgix.net/blog/2023-11-09-react-error-bounderies/4.jpeg?fm=webp&auto=format
+> **Image Explanation:** This visual shows how an Error Boundary acts as a "safety net." When a specific component (the red node) fails, the Error Boundary prevents the crash from bubbling up to the rest of the app, ensuring the user still sees a functional interface or a helpful error message rather than a blank screen.
 
 React provides a built-in mechanism for catching errors in your components through **Error Boundaries**. These are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of crashing the component tree. Here is an example of how you can use an error boundary:
 
